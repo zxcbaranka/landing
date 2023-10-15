@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+}
+.text-menu {
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+.text-menu a{
+    color:white;
+    margin: 2px;
+    text-decoration: none;
+    
+    
+
+}
+.menu-links{
+    float:right;
+
+   
+}
+.header{
+    background-image: linear-gradient(#de857f,#fecb9c);
+    height: 100vh;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    z-index: 10;
+}
+.header-content h1{
+    font-size: 100px;
+    color:white;
+    text-shadow:5px 10px #df6161 ;
+}
+.header-content a{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow:  6px 6px #df6161 ;
+    padding: 20px;
+    font-weight: 600;
+    margin: 10px;
+    display:block;
+    width: 30%;
+    margin: 10px auto;
+}
+.about-us h1{
+    text-align: center;
+    width: 97%;
+    margin-top:70px ;
+}
+.about-us p{
+    margin: 30px;
+    
+   
+}
+.header-bg{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.circle-bordered{
+    position: absolute;
+    bottom: -20px;
+    left: 220px;
+    animation-name:circle-bordered;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.circle-dashed-border{
+    position: absolute;
+    bottom:-150px;
+    right: -150px;
+    animation-name: circle-dashed-border;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.circle1{
+    position: absolute;
+    top:-40px;
+    left:-30px;
+    animation: circle1 5s infinite linear;
+}
+.circle2{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    animation:circle3 infinite 4s linear;
+}
+.circle3{
+    position: absolute;
+    bottom: -55px;
+    left:-15px;
+    animation:circle3 infinite 4s linear;
+}
+.octagon{
+    position: absolute;
+    left:50%;
+    bottom:10%;
+    animation-name: octagon;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.triangle{
+    position: absolute;
+    left:50%;
+    top:15%;
+    animation-name:triangle;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+}
+@keyframes circle-bordered{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes triangle{
+    0%{
+        transform:translateX(-100px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+@keyframes circle-dashed-border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes circle3{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(25px,25px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.what-we-do{
+    background-image: linear-gradient(7deg,#da7e7e,#fdc795 70%,white 70%);
+}
+.do-text{
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 #df6363;
+    background-color: white;
+    padding:20px;
+    margin: 15px;
+
+    
+}
+.do-left h2{
+    text-align: center;
+    font-size: 40px;
+}
+.do-left{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+.do-right{
+    display: inline-block;
+    width: 35%;
+}
+.do-right img{
+    height: 100%;
+    margin: 20px;
+    max-width: 300px;
+
+}
+@keyframes octagon{
+0%{
+    transform: rotate(0deg);
+    left:50%;
+    bottom: 10%;
+}
+50%{
+    left:55%;
+    bottom:-10%;
+}
+100%{
+    transform: rotate(360deg);
+    left:50%;
+    bottom: 10%; 
+}
+}
+@keyframes circle2{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(25px,25px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes circle1{
+0%{
+    transform: rotate(0deg);
+    left:-30px;
+    top:-40px;
+}
+50%{
+    left: 0;
+    top:20px;
+}
+100%{
+    transform: rotate(360deg);
+    left:-30px;
+    top: -40px; 
+}
+}
+.services-card{
+    margin: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    border: solid 5px #FFC997;
+    width: 320px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    vertical-align: top;
+}
+.design p{
+    font-weight:normal;
+}
+.services h2{
+    text-align: center;
+    color:White;
+    font-size: 40px;
+}
+.services-card hr{
+    border:#E06161 solid 1px ;
+    width: 60%;
+    margin:10px  auto;
+
+    
+}
+.services{
+    background-image: linear-gradient(160deg, #da7f7e 50%,white 50%);
+}
+.advantages-card{
+    border: solid #FFC997 5px;
+    box-shadow: #E06161 5px 5px ;
+    margin: 25px;
+    width: 65%;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    left:10%;
+    background-color: white;
+    
+    
+}
+.advantages-card ul{
+    list-style-type: circle;
+    margin-top: 10px;
+}
+.working{
+    position: relative;
+    left:25%;
+}
+.advantages-content h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.advantages-bg{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.advantages{
+    position: relative;
+    height: 100vh;
+    
+}
+.bg_circle{
+    position: absolute;
+    right: -100px;
+    bottom: 10px;
+    width: 600px;
+}
+.bg_hexagon{
+    position: sticky;
+    top:10%;
+    width: 300px;
+    
+
+}
+.portfolio{
+    height: 100vh;
+}
+.site{  
+    border:#E06161 solid 4px;
+    border-radius: 15px;
+    height: 300px;
+    background-size: cover;
+    width: 48%;
+    display: inline-block;
+}
+.site1{
+    background-image:url(img/portfolio/site1.png); 
+}
+.site2{
+    background-image: url(img/portfolio/site2.png);
+}
+.site3{
+    background-image: url(img/portfolio/site3.png);
+}
+.site4{
+    background-image: url(img/portfolio/site4.png);
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+.feedback{
+    background-image: linear-gradient(#da7e7e,#fdc795);
+    height: 40vh;
+    padding:100px 0;
+}
+.feedback h2{
+    text-align: center;
+    font-size:40px;
+    
+}
+.feedback-btn{
+    border: none;
+    box-shadow:#df6161 5px 5px ;
+    border-radius: 20px;
+    padding:10px 20px ;
+    margin: 10px auto;
+    display: block;
+}
+@media (max-width:768px) {
+    .menu-links a{
+        display: block;
+    }
+    .header-content h1{
+        width: min-content;
+        font-size: 70px;
+    }
+    .do-left,.do-right{
+        display: block;
+        width: 100%;
+    }
+    .working{
+        left:0;
+    }
+    .advantages-card{
+        left:0;
+    }
+} 
