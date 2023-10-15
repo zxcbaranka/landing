@@ -383,6 +383,7 @@
     .header-content h1{
         width: min-content;
         font-size: 70px;
+        margin-top: 20px;
     }
     .do-left,.do-right{
         display: block;
@@ -393,5 +394,16 @@
     }
     .advantages-card{
         left:0;
+        width: 90%;
     }
+    .header-content a{
+        width: 60%;
+    }
+    .advantages{
+        height: fit-content;
+    }
+    .portfolio{
+        height: fit-content;
+    }
+
 } 
